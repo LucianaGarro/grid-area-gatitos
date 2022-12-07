@@ -1,0 +1,51 @@
+
+
+/* declaramos los nombres de 
+las etiquetas para grid-t-areas */
+
+header{
+    grid-area: header;
+    background-color: blanchedalmond;
+}
+.productos{
+    grid-area: productos;
+    background-color: blanchedalmond;
+}
+.servicios{
+    grid-area: servicios;
+    background-color: blanchedalmond;
+}
+nav{
+    grid-area: nav;
+    background-color: blanchedalmond;
+}
+aside{
+    grid-area: aside;
+    background-color: blanchedalmond;
+}
+footer{
+    grid-area: footer;
+    background-color: blanchedalmond;
+}
+
+.grilla{
+    display: grid;
+    width:100%;
+    height: 100vh;
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 2fr 2fr 100px ;
+    grid-template-areas: 
+    "nav header     header"
+    "nav productos  aside"
+    "nav servicios  aside"
+    "nav footer     footer";
+    gap:10px;
+
+}
+
+.flexGatitos{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding:10px;
+}
